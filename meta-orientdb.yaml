@@ -1,0 +1,20 @@
+ apiVersion: core.napptive.com/v1alpha1
+ kind: ApplicationMetadata 
+ name: "OrientDB"
+ version: 1.0 
+ description: "This application is for deploying an OrientDB instance"
+ keywords: 
+   - "OrientDB"
+   - "NoSQL"
+   - "Database"
+   - "DB"
+   - "db"
+   - "Apache"
+ # Provide license
+ license: "Apache License Version 2.0"
+ url: "https://hub.docker.com/_/orientdb"
+ doc: "https://github.com/docker-library/docs/tree/master/orientdb"
+ logo:
+   - src: "https://raw.githubusercontent.com/docker-library/docs/aa4e1c37afc16c4631e2272c1b5e2fe8e25e829c/orientdb/logo.png"
+     type: "image/png"
+     size: "120x120"

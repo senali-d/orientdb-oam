@@ -1,0 +1,22 @@
+ apiVersion: core.oam.dev/v1beta1
+ kind: Application
+ metadata:
+   name: orientdb
+ spec:
+   components:
+     - name: orientdb
+       type: webservice
+       properties:
+         image: orientdb:latest
+         ports: 
+           - port: 2424
+             expose: true 
+         env:
+           - name: ORIENTDB_ROOT_PASSWORD
+             value: rootpwd
+       traits:
+         - type: napptive-ingress
+           properties:
+             name: nginx-ingress
+             port: 2424
+             path: /
